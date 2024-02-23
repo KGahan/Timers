@@ -19,7 +19,7 @@ function startTimer() {
   
     var timerInterval = setInterval(function() {
       var now = new Date();
-      var timeLeft = Math.max(0, endTime - now); // Ensuring that timeLeft is never negative
+      var timeLeft = Math.max(0, endTime - now);
   
       if (timeLeft <= 0) {
         clearInterval(timerInterval);
